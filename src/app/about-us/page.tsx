@@ -4,11 +4,6 @@ import { Shield, Target, Users, TrendingUp, Award, Heart } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
-export const metadata = {
-  title: "Sobre Nós | ptsitesapostasdesportivas.com",
-  description:
-    "Descubra a nossa missão de ajudar apostadores portugueses a encontrar as melhores casas de apostas online com análises detalhadas e imparciais.",
-}
 
 export default function AboutUs() {
   return (
