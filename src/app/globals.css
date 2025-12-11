@@ -91,3 +91,312 @@
     @apply bg-background text-foreground;
   }
 }
+/* Portuguese Color Utilities - Solid Colors Only */
+.bg-portugal-green {
+  background-color: hsl(var(--portugal-green));
+}
+
+.bg-portugal-red {
+  background-color: hsl(var(--portugal-red));
+}
+
+.bg-portugal-dark-green {
+  background-color: hsl(var(--portugal-dark-green));
+}
+
+.bg-portugal-light-green {
+  background-color: hsl(var(--portugal-light-green));
+}
+
+.bg-portugal-dark-red {
+  background-color: hsl(var(--portugal-dark-red));
+}
+
+.text-portugal-green {
+  color: hsl(var(--portugal-green));
+}
+
+.text-portugal-red {
+  color: hsl(var(--portugal-red));
+}
+
+.text-portugal-dark-green {
+  color: hsl(var(--portugal-dark-green));
+}
+
+.text-portugal-light-green {
+  color: hsl(var(--portugal-light-green));
+}
+
+.text-portugal-dark-red {
+  color: hsl(var(--portugal-dark-red));
+}
+
+.border-portugal-green {
+  border-color: hsl(var(--portugal-green));
+}
+
+.border-portugal-red {
+  border-color: hsl(var(--portugal-red));
+}
+
+.hover\:bg-portugal-green:hover {
+  background-color: hsl(var(--portugal-green));
+}
+
+.hover\:bg-portugal-red:hover {
+  background-color: hsl(var(--portugal-red));
+}
+
+.hover\:bg-portugal-dark-green:hover {
+  background-color: hsl(var(--portugal-dark-green));
+}
+
+.hover\:bg-portugal-dark-red:hover {
+  background-color: hsl(var(--portugal-dark-red));
+}
+
+.hover\:text-portugal-green:hover {
+  color: hsl(var(--portugal-green));
+}
+
+.hover\:text-portugal-red:hover {
+  color: hsl(var(--portugal-red));
+}
+
+.hover\:text-portugal-light-green:hover {
+  color: hsl(var(--portugal-light-green));
+}
+
+/* Hi-Tech Theme Utilities */
+.bg-tech-white {
+  background-color: var(--tech-white);
+}
+
+.bg-tech-black {
+  background-color: var(--tech-black);
+}
+
+.bg-tech-gold {
+  background-color: var(--tech-gold);
+}
+
+.bg-tech-gray-200 {
+  background-color: var(--tech-gray-200);
+}
+
+.bg-tech-red {
+  background-color: var(--tech-red);
+}
+
+.text-tech-white {
+  color: var(--tech-white);
+}
+
+.text-tech-black {
+  color: var(--tech-black);
+}
+
+.text-tech-gold {
+  color: var(--tech-gold);
+}
+
+.text-tech-red {
+  color: var(--tech-red);
+}
+
+.border-tech-black {
+  border-color: var(--tech-black);
+}
+
+.border-tech-gold {
+  border-color: var(--tech-gold);
+}
+
+.border-tech-gray-200 {
+  border-color: var(--tech-gray-200);
+}
+
+.border-tech-red {
+  border-color: var(--tech-red);
+}
+
+.shadow-tech-medium {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-tech-strong {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-tech-glow {
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+@keyframes subtle-zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-subtle-zoom {
+  animation: subtle-zoom 20s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Hi-Tech Utility Classes */
+.tech-card {
+  background-color: var(--tech-white);
+  border: 1px solid var(--tech-gray-200);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.8), transparent);
+  animation: tech-scan 3s ease-in-out infinite;
+}
+
+.tech-card:hover {
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-button {
+  background-color: var(--tech-gold);
+  color: var(--tech-black);
+  font-weight: 700;
+  border: 1px solid var(--tech-black);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tech-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.tech-button:hover::before {
+  left: 100%;
+}
+
+.tech-button:hover {
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.tech-header {
+  background-color: var(--tech-black);
+  color: var(--tech-white);
+  border-bottom: 2px solid var(--tech-gold);
+  background-image: linear-gradient(rgba(255, 215, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 215, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.tech-rank {
+  background-color: var(--tech-gold);
+  color: var(--tech-white);
+  font-weight: 700;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);
+}
+
+.tech-badge {
+  background-color: var(--tech-gold);
+  color: var(--tech-black);
+  font-weight: 700;
+  clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+}
+
+.tech-glow {
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.3), 0 0 10px rgba(255, 215, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.1);
+}
+
+.tech-red-glow {
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.3), 0 0 10px rgba(255, 0, 0, 0.2), 0 0 15px rgba(255, 0, 0, 0.1);
+}
+
+.tech-grid-bg {
+  background-image: linear-gradient(rgba(255, 215, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 215, 0, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.tech-scanner {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-scanner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.3), transparent);
+  animation: tech-scan 2s ease-in-out infinite;
+}
+
+/* Typography */
+.tech-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.tech-subheading {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.tech-body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tech-card::before {
+    height: 1px;
+  }
+}
