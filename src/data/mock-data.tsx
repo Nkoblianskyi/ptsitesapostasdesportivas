@@ -17,7 +17,7 @@ export const bettingSites: BettingSite[] = [
     logo: "/blitz.svg",
     rating: 9.8,
     bonus: "200% até 10.000€",
-    welcomeOffer: "+ Aposta Grátis Onlywin 50% até {{1000€",
+    welcomeOffer: "+ Aposta Grátis Onlywin 50% até 1000€",
     votes: 3914,
     link: "https://qualityboost.top/dbk35YBJ",
   },
