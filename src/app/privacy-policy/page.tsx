@@ -1,12 +1,15 @@
-export const metadata = {
-  title: "Política de Privacidade | ptsitesapostasdesportivas.com",
-  description:
-    "Conheça como protegemos os seus dados pessoais e respeitamos a sua privacidade no nosso portal de apostas desportivas.",
-}
+"use client"
+
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SiteHeader />
+      </div>
+      <main className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
       <section className="pt-28 pb-12 flex-grow">
         <div className="container mx-auto px-4 max-w-[1150px]">
           <div className="bg-gradient-to-r from-green-600 to-red-600 rounded-lg p-8 mb-8 text-white shadow-lg">
@@ -212,5 +215,7 @@ export default function PrivacyPolicy() {
         </div>
       </section>
     </main>
+    <SiteFooter />
+    </>
   )
 }

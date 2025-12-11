@@ -2,8 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -38,13 +36,7 @@ html {
 }
         `}</style>
       </head>
-      <body>
-        <div className="fixed top-0 left-0 right-0 z-50">
-          <SiteHeader />
-        </div>
-        <div className="pt-16">{children}</div>
-        <SiteFooter />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

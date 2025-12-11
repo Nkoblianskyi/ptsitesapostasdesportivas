@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { BettingSitesList } from "@/components/betting-sites-list"
 import { TopOffersModal } from "@/components/top-offers-modal"
 import { AgeRestrictionModal } from "@/components/age-restriction-modal"
@@ -17,7 +19,11 @@ export default function Home() {
   const [isAdvertiserModalOpen, setIsAdvertiserModalOpen] = useState(false)
 
   return (
-    <main className="min-h-screen flex flex-col relative bg-black/60">
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SiteHeader />
+      </div>
+      <main className="min-h-screen flex flex-col relative bg-black/60 pt-16">
       <div className="fixed inset-0 z-0">
         <Image
           src="/portuguese-football-stadium-background-with-red-an.png"
@@ -52,5 +58,7 @@ export default function Home() {
         <AdvertiserInfoModal isOpen={isAdvertiserModalOpen} onClose={() => setIsAdvertiserModalOpen(false)} />
       </div>
     </main>
+    <SiteFooter />
+    </>
   )
 }

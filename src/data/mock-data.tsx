@@ -16,20 +16,20 @@ export const bettingSites: BettingSite[] = [
     name: "Blitz",
     logo: "/blitz.svg",
     rating: 9.8,
-    bonus: "De Primeiro Depósito 100% Até 400€",
-    welcomeOffer: "",
+    bonus: "200% até 10.000€",
+    welcomeOffer: "+ Aposta Grátis Onlywin 50% até {{1000€",
     votes: 3914,
-    link: "https://qualityboost.top/ZggZ4wsp",
+    link: "https://qualityboost.top/dbk35YBJ",
   },
   {
     id: 2,
     name: "Lamabet",
     logo: "/lamabet.svg",
     rating: 9.7,
-    bonus: "Aposta Grátis 10% Até 100€",
+    bonus: "Bônus Esportivo Até 1800€",
     welcomeOffer: "",
     votes: 4371,
-    link: "https://qualityboost.top/tk4QSVvd",
+    link: "https://qualityboost.top/CHvLH45S",
   },
 
   {
@@ -40,7 +40,7 @@ export const bettingSites: BettingSite[] = [
     bonus: "De Primeiro Depósito 100% Até 100€",
     welcomeOffer: "",
     votes: 6752,
-    link: "https://qualityboost.top/ZggZ4wsp",
+    link: "https://qualityboost.top/dbk35YBJ",
   },
 
   {
@@ -51,7 +51,7 @@ export const bettingSites: BettingSite[] = [
     bonus: "Accumulator Boost Até 100%",
     welcomeOffer: "+ De Primeiro Depósito 100% Até 100€",
     votes: 3855,
-    link: "https://qualityboost.top/ZggZ4wsp",
+    link: "https://qualityboost.top/dbk35YBJ",
   },
 
   {
@@ -61,7 +61,7 @@ export const bettingSites: BettingSite[] = [
     rating: 9.2,
     bonus: "100% Até 100€ De Primeiro Depósito",
     votes: 3975,
-    link: "https://qualityboost.top/ZggZ4wsp",
+    link: "https://qualityboost.top/dbk35YBJ",
   },
 
 

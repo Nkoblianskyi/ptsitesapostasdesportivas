@@ -106,10 +106,10 @@ export function EditorChoiceModal({ bettingSites }: EditorChoiceModalProps) {
             <div className="flex-1 flex flex-col justify-center mb-2">
               <div className="text-sm text-gray-600 font-medium mb-2 tech-subheading">Bónus Exclusivo</div>
               <div className="text-xl font-bold leading-tight tech-heading text-black">
-                De Primeiro Depósito 100% Até 400€
+                200% até 10.000€
               </div>
               <div className="text-base font-bold leading-tight tech-heading text-black">
-
+                + Aposta Grátis Onlywin 50% até 1000 €
               </div>
 
             </div>

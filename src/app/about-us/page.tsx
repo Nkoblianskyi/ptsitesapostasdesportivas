@@ -1,4 +1,8 @@
+"use client"
+
 import { Shield, Target, Users, TrendingUp, Award, Heart } from "lucide-react"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 export const metadata = {
   title: "Sobre Nós | ptsitesapostasdesportivas.com",
@@ -8,7 +12,11 @@ export const metadata = {
 
 export default function AboutUs() {
   return (
-    <main className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+    <>
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <SiteHeader />
+      </div>
+      <main className="min-h-screen flex flex-col bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
       <section className="pt-28 pb-12 flex-grow">
         <div className="container mx-auto px-4 max-w-[1150px]">
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-8 border-l-8 border-green-600">
@@ -163,5 +171,7 @@ export default function AboutUs() {
         </div>
       </section>
     </main>
+    <SiteFooter />
+    </>
   )
 }
