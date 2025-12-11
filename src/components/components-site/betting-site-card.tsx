@@ -268,7 +268,7 @@ export function BettingSiteCard({ site, rank }: SiteCardProps) {
               <div className="text-center">
                 <div className="text-[10px] text-gray-600 uppercase font-bold mb-1 tech-subheading">BÓNUS BOAS-VINDAS</div>
                 <div className="text-sm font-bold text-black leading-tight mb-1 tech-heading">{styleBonusText(site.bonus)}</div>
-                <div className="text-sm font-bold text-black leading-tight tech-heading">{styleBonusText(site.welcomeOffer)}</div>
+                <div className="text-xs font-bold text-black leading-tight tech-heading">{styleBonusText(site.welcomeOffer)}</div>
               </div>
             </div>
 
